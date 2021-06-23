@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-	--color-main: #1a202e;
+	--main: #5850EC;
+	--primary: #8DA2FB;
+	--secondary: #DCBDFF;
+	--success: #45BEA3;
+	--dark: #1D1A27;
 }
 
 * {
@@ -15,6 +19,7 @@
 
 body {
 	overflow-x: hidden;
+	height: 100%;
 }
 
 #sidebar-toggle {
@@ -51,7 +56,7 @@ body {
 	top: 0;
 	height: 100%;
 	padding: 1rem 1.5rem;
-	background: var(--color-main);
+	background: var(--dark);
 	color: #fff;
 	z-index: 20;
 	transition: left 300ms;
@@ -81,7 +86,7 @@ body {
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
-	background: #8da2fb;
+	background: var(--primary);
 }
 
 .sidebar-user h3 {
@@ -98,7 +103,7 @@ body {
 
 .menu-head {
 	text-transform: uppercase;
-	color: #8da2fb;
+	color: var(--primary);
 	font-size: .8rem;
 	font-weight: 500;
 	margin-bottom: .8rem;
@@ -139,6 +144,23 @@ header {
 	background: #fff;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 	transition: left 300ms;
+}
+
+.wrapper {
+	padding: 1rem;
+}
+
+.container {
+	color: #000;
+	position: relative;
+    height: 100vh;
+    width: 100vw;    
+	background-image: linear-gradient(to right, #1d1a27, #201b31, #241c3c, #271d46, #2b1e51);
+    background-size: cover;
+    display: flex;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .menu-toggle label {
@@ -316,14 +338,14 @@ main {
 }
 
 span.indicator {
-	background: #c9f7f5;
+	background: var(--success);
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
 }
 
 span.indicator.even {
-	background: #fff4de;
+	background: var(--primary);
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
@@ -342,9 +364,9 @@ span.indicator.even {
 }
 
 table button {
-	background: #8da2fb;
-	color: midnightblue;
-	border: 1px solid #8da2fb;
+	background: var(--success);
+	color: #fff;
+	border: 1px solid var(--success);
 	padding: .5rem;
 	border-radius: 3px;
 }
@@ -353,12 +375,52 @@ table button {
 	overflow: auto;
 }
 
-footer div {
+.form {
+	text-align: center;
+	height: 350px;
+	width: 350px;
+	background: #fff;
+	border-radius: 15px;
+	padding: 1rem;
+}
+
+.form-group {
+	padding: 1rem;
+}
+
+.form h2 {
+	margin-top: 1rem;
+}
+
+.form-control {
+	height: 45px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	background: transparent;
+	width: 100%;
+	padding: .5rem 1rem;
+	color: var(--font);
+}
+
+.form-group p {
+	font-size: .8rem;
+	color: #5050ec;
+	margin-top: 1rem;
+}
+
+.form-group button {
+	padding: .5rem 2.5rem;
+	color: #fff;
+	background: #5050ec;
+	border: 1px solid #5050ec;
+	font-weight: 700;
+}
+
+footer {
 	font-size: .8rem;
 	text-align: center;
 	color: black;
 	padding: .5rem 1rem;
-	margin-left: 280px;
 }
 
 @media only screen and (max-width: 1200px) {
