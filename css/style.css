@@ -246,7 +246,7 @@ main {
 	color: orangered;
 }
 
-.jobs-grid {
+.orders-grid {
 	margin-top: 4rem;
 	display: grid;
 	grid-template-columns: auto 66%;
@@ -301,7 +301,7 @@ main {
 	border-radius: 3px;
 }
 
-.jobs h2 small {
+.orders h2 small {
 	color: #5850ec;
 	font-weight: 600;
 	display: inline-block;
@@ -309,7 +309,7 @@ main {
 	font-size: .9rem;
 }
 
-.jobs table {
+.orders table {
 	border-collapse: collapse;
 	margin-top: 1rem;
 	overflow-x: auto;
@@ -329,7 +329,7 @@ span.indicator.even {
 	border-radius: 50%;
 }
 
-.jobs table td div {
+.orders table td div {
 	background: #fff;
 	margin-bottom: .8rem;
 	height: 60px;
@@ -351,6 +351,14 @@ table button {
 
 .table-responsive {
 	overflow: auto;
+}
+
+footer div {
+	font-size: .8rem;
+	text-align: center;
+	color: black;
+	padding: .5rem 1rem;
+	margin-left: 280px;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -386,7 +394,7 @@ table button {
 		grid-template-columns: 100%;
 	}
 
-	.jobs-grid {
+	.orders-grid {
 		grid-template-columns: 100%;
 	}
 
