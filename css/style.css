@@ -268,12 +268,17 @@ main {
 	color: var(--success);
 }
 
-.orders-grid {
+.data-grid {
 	margin-top: 4rem;
 	display: grid;
 	grid-template-columns: auto 66%;
 	grid-gap: 3rem;
 }
+
+.table-grid {
+		grid-template-columns: 100%;
+		margin-top: 2rem;
+	}
 
 .analytics-card {
 	background: #fff;
@@ -323,7 +328,7 @@ main {
 	border-radius: 3px;
 }
 
-.orders h2 small {
+.grid h2 small {
 	color: #5850ec;
 	font-weight: 600;
 	display: inline-block;
@@ -331,7 +336,7 @@ main {
 	font-size: .9rem;
 }
 
-.orders table {
+.grid table {
 	border-collapse: collapse;
 	margin-top: 1rem;
 	overflow-x: auto;
@@ -351,7 +356,7 @@ span.indicator.even {
 	border-radius: 50%;
 }
 
-.orders table td div {
+.grid table td div {
 	background: #fff;
 	margin-bottom: .8rem;
 	height: 60px;
@@ -456,7 +461,7 @@ footer {
 		grid-template-columns: 100%;
 	}
 
-	.orders-grid {
+	.data-grid {
 		grid-template-columns: 100%;
 	}
 
