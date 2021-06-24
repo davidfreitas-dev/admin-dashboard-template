@@ -131,6 +131,17 @@ body {
 	margin-right: .8rem;
 }
 
+.btn-main {
+	outline: none;
+	color: #fff;
+	background: #5850ec;
+	border: none;
+	padding: .6rem 1rem;
+	border-radius: 3px;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
 .btn-link {
 	border: none;
 	background: transparent;
