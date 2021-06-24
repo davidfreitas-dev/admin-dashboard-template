@@ -256,16 +256,16 @@ main {
 	font-size: 5rem;
 }
 
+.card-chart.color-main span {
+	color: var(--main);
+}
+
+.card-chart.primary span {
+	color: var(--primary);
+}
+
 .card-chart.success span {
-	color: seagreen;
-}
-
-.card-chart.danger span {
-	color: tomato;
-}
-
-.card-chart.yellow span {
-	color: orangered;
+	color: var(--success);
 }
 
 .orders-grid {
