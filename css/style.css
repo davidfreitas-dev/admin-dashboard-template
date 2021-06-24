@@ -58,6 +58,7 @@ body {
 	padding: 1rem 1.5rem;
 	background: var(--dark);
 	color: #fff;
+	overflow-y: auto;
 	z-index: 20;
 	transition: left 300ms;
 }
@@ -130,6 +131,13 @@ body {
 	margin-right: .8rem;
 }
 
+.btn-link {
+	border: none;
+	background: transparent;
+	color: #fff;
+	margin-top: 1rem;
+}
+
 header {
 	height: 70px;
 	display: flex;
@@ -144,10 +152,6 @@ header {
 	background: #fff;
 	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
 	transition: left 300ms;
-}
-
-.wrapper {
-	padding: 1rem;
 }
 
 .container {
@@ -217,7 +221,7 @@ main {
 
 .cards {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 3rem;
 	margin-top: 2rem;
 }
@@ -248,12 +252,12 @@ main {
 }
 
 .card-info h2 {
-	font-size: 2.2rem;
+	font-size: 2rem;
 	color: #333;
 }
 
 .card-chart span {
-	font-size: 5rem;
+	font-size: 4.5rem;
 }
 
 .card-chart.color-main span {
@@ -347,6 +351,7 @@ span.indicator {
 	height: 15px;
 	width: 15px;
 	border-radius: 50%;
+	margin-left: 1rem;
 }
 
 span.indicator.even {
@@ -382,7 +387,6 @@ table button {
 
 .form {
 	text-align: center;
-	height: 350px;
 	width: 350px;
 	background: #fff;
 	border-radius: 15px;
@@ -428,6 +432,89 @@ footer {
 	padding: .5rem 1rem;
 }
 
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 40; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	border: 1px solid #888;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+	-webkit-animation-name: animatetop;
+	-webkit-animation-duration: 0.4s;
+	animation-name: animatetop;
+	animation-duration: 0.4s;
+	border-radius: 10px;
+}
+
+.modal-md {
+	width: 35%;
+}
+
+.modal-lg {
+	width: 70%;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0} 
+	to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+	color: var(--primary);
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	margin-right: 1rem;
+}
+
+.close:hover,
+.close:focus {
+	color: var(--main);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.modal-header {
+	padding: 2px 16px;
+	background-color: var(--primary);
+	color: white;
+}
+
+.modal-body {
+	padding: 2px 16px;
+	display: grid;
+	justify-content: center;
+}
+
+.modal-footer {
+	padding: 2px 16px;
+	background-color: var(--primary);
+	color: white;
+}
+
 @media only screen and (max-width: 1200px) {
 	.sidebar {
 		left: -100%;
@@ -454,6 +541,14 @@ footer {
 	.cards {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.modal-md {
+		width: 50%;
+	}
+
+	.modal-lg {
+		width: 85%;
+	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -476,5 +571,9 @@ footer {
 
 	.header-actions button:first-child {
 		margin-left: 0rem;
+	}
+
+	.modal-content {
+		width: 95%;
 	}
 }

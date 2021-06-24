@@ -4,6 +4,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
 	<title>Admin Dashboard</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -82,14 +85,14 @@
 						</li>
 						<li>
 							<a href="">
-								<span class="las la-users"></span>
-								Customers
+								<span class="las la-shopping-bag"></span>
+								Sales
 							</a>
 						</li>
 						<li>
 							<a href="">
-								<span class="las la-envelope"></span>
-								Mails
+								<span class="las la-users"></span>
+								Customers
 							</a>
 						</li>
 					</ul>
@@ -123,14 +126,32 @@
 						<span class="las la-file-export"></span>
 						Export
 					</button>
-					<button>
-						<span class="las la-tools"></span>
-						Settings
+					<button id="myBtn">
+						<span class="las la-envelope"></span>
+						Mail
 					</button>
 				</div>
 			</div>
 
 			<div class="cards">
+				<div class="card-single">
+					<div class="card-flex">
+						<div class="card-info">
+							<div class="card-head">
+								<span>Sales</span>
+								<small>Current Day</small>
+							</div>
+
+							<h2>$325,11</h2>
+
+							<small>View All <span class="las la-arrow-right"></span></small>
+						</div>
+						<div class="card-chart color-main">
+							<span class="las la-hand-holding-usd"></span>
+						</div>
+					</div>
+				</div>
+
 				<div class="card-single">
 					<div class="card-flex">
 						<div class="card-info">
@@ -144,7 +165,7 @@
 							<small>View All <span class="las la-arrow-right"></span></small>
 						</div>
 						<div class="card-chart color-main">
-							<span class="las la-hand-holding-usd"></span>
+							<span class="las la-wallet"></span>
 						</div>
 					</div>
 				</div>
@@ -422,8 +443,19 @@
 				<p>Developed by David Freitas. © 2021</p>
 			</div>
 		</footer>
+
+		<div id="myModal" class="modal">  
+			<div class="modal-content modal-md">
+				<span class="close">&times;</span>
+				<div class="modal-body">
+					Modal Content
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<label for="sidebar-toggle" class="body-label"></label>
+
+	<script src="js/modal.js"></script>
 </body>
 </html>

@@ -4,14 +4,15 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,minimum-scale=1">
 	<title>Admin Dashboard</title>
+
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
 	<link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<style type="text/css">
-		p {
-			color: #fff;
+		.wrapper {
 			text-align: center;
-			margin-top: 1rem;
 		}
 	</style>
 </head>
@@ -33,8 +34,38 @@
 					</div>		
 				</form>
 			</div>
-			<a href=""><p>Sign up here.</p></a>
+			<button class="btn-link" id="myBtn">Sign up here.</button>
+		</div>
+
+		<div id="myModal" class="modal">  
+			<div class="modal-content modal-md">
+				<span class="close">&times;</span>
+				<div class="modal-body">
+					<div class="form">
+						<h2>Sign Up</h2>
+						<form action="">
+							<div class="form-group">
+								<input type="text" class="form-control" id="" name="" placeholder="First Name">
+							</div>
+							<div class="form-group">
+								<input type="text" class="form-control" id="" name="" placeholder="Last Name">
+							</div>
+							<div class="form-group">
+								<input type="email" class="form-control" id="" name="" placeholder="Your Email">
+							</div>
+							<div class="form-group">
+								<input type="password" class="form-control" id="" name="" placeholder="Your Password">
+							</div>
+							<div class="form-group">
+								<button type="button" id="">Login</button>
+							</div>		
+						</form>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
+
+	<script src="js/modal.js"></script>
 </body>
 </html>
