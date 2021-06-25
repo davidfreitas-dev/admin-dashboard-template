@@ -117,20 +117,58 @@
 		<main>
 			<div class="page-header">
 				<div>
-					<h1>Dashboard Products</h1>
-					<small>Click on NEW PRODUCT button to insert a product.</small>
+					<h1>Dashboard Order Details</h1>
+					<small>Monitor key metrics. Check reporting and review insights</small>
 				</div>
 
 				<div class="header-actions">
 					<button id="myBtn">
-						<span class="las la-plus-circle"></span>
-						New Product
+						<span class="las la-check-circle"></span>
+						Approved
 					</button>
 				</div>
 			</div>
 
-			<div class="table-grid">
-				<div class="grid">							
+			<div class="data-grid">
+				<div class="order-card">
+					<div class="order-head">
+						<h3>Order ID: 12548</h3>
+						<h4>15/05/2021</h4>
+					</div>
+
+					<div class="order-chart">
+						<div class="order-details">
+							Order: R$145,00 <br>
+							Shippment: R$35,00 <br>
+							Total: R$180,00 <br>
+							<br>
+							CPF: 999.999.999-99 <br>
+							Name: John Doe <br>
+							Email: johdoae@email.com <br>
+							Phone: (11) 99999-9999 <br>
+							Adress: Av. Soldier, 87 <br>
+							Neighbor: Midtown <br>
+							City: Sampa <br>
+							State: Sampa <br>
+							Zip Code: 00000-000 <br>
+
+						</div>
+
+						<div class="order-note">
+							<small><!-- Notes about the order here.--></small>
+						</div>
+					</div>
+
+					<div class="order-btn">
+						<button>
+							<span class="las la-truck"></span>
+							Shipped
+						</button>
+					</div>
+				</div>
+
+				<div class="grid">
+					<h2>Products</h2>					
 					<div class="table-responsive">
 						<table width="100%">
 							<tbody>
@@ -162,12 +200,12 @@
 									</td>
 									<td>
 										<div>
-											45 In Stock
+											7 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -200,12 +238,12 @@
 									</td>
 									<td>
 										<div>
-											15 In Stock
+											4 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -238,12 +276,12 @@
 									</td>
 									<td>
 										<div>
-											45 In Stock
+											7 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -276,12 +314,12 @@
 									</td>
 									<td>
 										<div>
-											15 In Stock
+											4 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -314,12 +352,12 @@
 									</td>
 									<td>
 										<div>
-											45 In Stock
+											7 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -352,12 +390,12 @@
 									</td>
 									<td>
 										<div>
-											15 In Stock
+											4 und
 										</div>
 									</td>
 									<td>
 										<div>
-											<button>Details</button>
+											<button>IMG</button>
 										</div>
 									</td>
 								</tr>
@@ -373,19 +411,8 @@
 				<p>Developed by David Freitas. © 2021</p>
 			</div>
 		</footer>
-
-		<div id="myModal" class="modal">  
-			<div class="modal-content modal-md">
-				<span class="close">&times;</span>
-				<div class="modal-body">
-					Modal Content
-				</div>
-			</div>
-		</div>
 	</div>
 
 	<label for="sidebar-toggle" class="body-label"></label>
-
-	<script src="js/modal.js"></script>
 </body>
 </html>
