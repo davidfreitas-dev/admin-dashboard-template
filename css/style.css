@@ -139,7 +139,7 @@ body {
 	padding: .6rem 1rem;
 	border-radius: 3px;
 	font-weight: 600;
-	margin-top: 1rem;
+	margin
 }
 
 .btn-link {
@@ -291,9 +291,9 @@ main {
 }
 
 .table-grid {
-		grid-template-columns: 100%;
-		margin-top: 2rem;
-	}
+	grid-template-columns: 100%;
+	margin-top: 2rem;
+}
 
 .analytics-card {
 	background: #fff;
@@ -524,6 +524,14 @@ footer {
 	padding: 2px 16px;
 	background-color: var(--primary);
 	color: white;
+}
+
+.deatils {
+	color: #000;
+	padding: 1rem;
+	font-size 1.2rem;
+	text-align: left;
+	margin: 2rem;
 }
 
 @media only screen and (max-width: 1200px) {
