@@ -29,7 +29,7 @@ body {
 .body-label {
 	position: fixed;
 	height: 100%;
-	width: calc(100% - 280px);
+	width: calc(100% - 250px);
 	z-index: 30;
 	right: -100%;
 	top: 0;
@@ -50,7 +50,7 @@ body {
 }
 
 .sidebar {
-	width: 280px;
+	width: 250px;
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -99,7 +99,7 @@ body {
 }
 
 .sidebar-menu {
-	margin-top: 3rem;
+	margin-top: 2rem;
 }
 
 .menu-head {
@@ -139,7 +139,6 @@ body {
 	padding: .6rem 1rem;
 	border-radius: 3px;
 	font-weight: 600;
-	margin
 }
 
 .btn-link {
@@ -156,8 +155,8 @@ header {
 	align-items: center;
 	padding: 1rem 1.5rem;
 	position: fixed;
-	left: 280px;
-	width: calc(100% - 280px);
+	left: 250px;
+	width: calc(100% - 250px);
 	top: 0;
 	z-index: 20;
 	background: #fff;
@@ -198,7 +197,7 @@ header {
 }
 
 .main-content {
-	margin-left: 280px;
+	margin-left: 250px;
 	transition: margin-left 300ms;
 }
 
@@ -233,7 +232,7 @@ main {
 .cards {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 3rem;
+	grid-gap: 1.5rem;
 	margin-top: 2rem;
 }
 
