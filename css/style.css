@@ -443,20 +443,65 @@ table button {
 	overflow: auto;
 }
 
+.banner {
+	text-align: center;
+	color: #fff;
+	height: 100%;
+	width: 35%;
+	display: flex;
+    grid-template-columns: 100%;
+    align-items: center;
+    justify-content: center;
+	flex-direction: column;
+}
+
+.banner > div {
+	width: 80%;
+}
+
+.banner p {
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.banner button {
+	padding: .5rem 2.5rem;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	font-weight: 700;
+}
+
+.banner button:hover {
+	padding: .5rem 2.5rem;
+	color: #fff;
+	background: #5050ec;
+	border: 1px solid #5050ec;
+	font-weight: 700;
+	cursor: pointer;
+}
+
 .form {
 	text-align: center;
-	width: 325px;
 	background: #fff;
-	border-radius: 15px;
-	padding: .7rem;
+	height: 100%;
+	width: 65%;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form > div {
+	width: 50%;
 }
 
 .form-group {
 	padding: 1rem;
 }
 
-.form h2 {
+.form h1 {
 	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 .form-control {
@@ -481,6 +526,7 @@ table button {
 	background: #5050ec;
 	border: 1px solid #5050ec;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 footer {
@@ -617,6 +663,12 @@ footer {
 	}
 }
 
+@media only screen and (max-width: 900px) {
+	.form > div {
+		width: 65%;
+	}
+}
+
 @media only screen and (max-width: 768px) {
 	.cards {
 		grid-template-columns: 100%;
@@ -637,6 +689,19 @@ footer {
 
 	.header-actions button:first-child {
 		margin-left: 0rem;
+	}
+
+	.container {
+		display: block;
+	}
+
+	.form {
+		width: 100%;
+	}
+
+	.banner {
+		height: 250px;
+		width: 100%;
 	}
 
 	.modal-content {
