@@ -464,6 +464,10 @@ table button {
 	margin-bottom: 2rem;
 }
 
+.banner a {
+	color: #fff;
+}
+
 .banner button {
 	padding: .5rem 2.5rem;
 	color: #fff;
@@ -696,12 +700,23 @@ footer {
 	}
 
 	.form {
+		height: auto;
 		width: 100%;
 	}
 
+	.form > div {
+		width: 80%;
+		margin: 3rem 0;
+	}
+
 	.banner {
-		height: 250px;
+		height: auto;
 		width: 100%;
+	}
+
+	.banner > div {
+		padding: 1rem;
+		margin: 1rem;
 	}
 
 	.modal-content {
