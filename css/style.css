@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-	--main: #5850EC;
-	--primary: #8DA2FB;
-	--secondary: #DCBDFF;
+	--main: #0ec381;
+	--primary: #8b9999;
+	--secondary: #efefef;
 	--success: #45BEA3;
-	--dark: #1D1A27;
+	--dark: #1b2138;
 }
 
 * {
@@ -87,7 +87,7 @@ body {
 	width: 110px;
 	height: 110px;
 	border-radius: 50%;
-	background: var(--primary);
+	background: var(--main);
 }
 
 .sidebar-user h3 {
@@ -104,7 +104,7 @@ body {
 
 .menu-head {
 	text-transform: uppercase;
-	color: var(--primary);
+	color: var(--main);
 	font-size: .8rem;
 	font-weight: 500;
 	margin-bottom: .8rem;
@@ -120,9 +120,13 @@ body {
 
 .sidebar-menu li a {
 	font-size: .9rem;
-	color: #efefef;
+	color: #cdcbcb;
 	display: flex;
 	align-items: center;
+}
+
+.sidebar-menu li a:hover {
+	color: #efefef;
 }
 
 .sidebar-menu li a span {
@@ -134,7 +138,7 @@ body {
 .btn-main {
 	outline: none;
 	color: #fff;
-	background: #5850ec;
+	background: var(--main);
 	border: none;
 	padding: .6rem 1rem;
 	border-radius: 3px;
@@ -203,7 +207,7 @@ header {
 
 main {
 	padding: 1.5rem;
-	background: #f1f5f9;
+	background: var(--secondary);
 	min-height: calc(100vh - 70px);
 	margin-top: 70px;
 }
@@ -216,12 +220,17 @@ main {
 .header-actions button {
 	outline: none;
 	color: #fff;
-	background: #5850ec;
+	background: var(--main);
 	border: none;
 	padding: .6rem 1rem;
 	margin-left: 1rem;
 	border-radius: 3px;
 	font-weight: 600;
+	cursor: pointer;
+}
+
+.header-actions button:hover {
+	background: #0db175;
 }
 
 .header-actions button span {
@@ -262,7 +271,7 @@ main {
 }
 
 .card-info h2 {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	color: #333;
 }
 
@@ -321,9 +330,9 @@ main {
 	height: 150px;
 	width: 150px;
 	border-left: 10px solid transparent;
-	border-right: 10px solid #5850ec;
-	border-bottom: 10px solid #5850ec;
-	border-top: 10px solid #5850ec;
+	border-right: 10px solid var(--main);
+	border-bottom: 10px solid var(--main);
+	border-top: 10px solid var(--main);
 	display: grid;
 	place-items: center;
 	margin: auto;
@@ -336,10 +345,10 @@ main {
 	padding: .6rem 1rem;
 	width: 100%;
 	height: 45px;
-	background: #5850ec;
 	color: #fff;
-	border: 1px solid #5850ec;
+	border: none;
 	border-radius: 3px;
+	background-image: linear-gradient(to right top, #0d8c5e, #0d9967, #0da76f, #0db578, #0ec381);
 }
 
 .order-card {
@@ -391,7 +400,7 @@ main {
 }
 
 .grid h2 small {
-	color: #5850ec;
+	color: var(--main);
 	font-weight: 600;
 	display: inline-block;
 	margin-left: 1rem;
@@ -432,11 +441,17 @@ span.indicator.even {
 }
 
 table button {
-	background: var(--success);
+	background: var(--main);
 	color: #fff;
-	border: 1px solid var(--success);
+	border: 1px solid var(--main);
 	padding: .5rem;
 	border-radius: 3px;
+	cursor: pointer;
+}
+
+table button:hover {
+	background: #0db175;
+	border: 1px solid #0db175;
 }
 
 .table-responsive {
